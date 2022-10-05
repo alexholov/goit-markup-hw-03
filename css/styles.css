@@ -14,8 +14,10 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+.container {
+}
 
-/* header */
+/* ----------Header------------- */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -62,9 +64,9 @@ body {
 .list-contact .link:focus {
   color: var(--accent-color);
 }
-/* header end */
+/* ------------Header end--------------- */
 
-/* Main */
+/* --------------Main---------------- */
 
 /*  section-buttons */
 .list-button {
