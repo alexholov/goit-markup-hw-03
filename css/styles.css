@@ -49,10 +49,10 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
   /* outline: 1px solid tomato; */
+  /* background-color: tomato; */
 }
 
 .section {
-  padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
 }
@@ -61,6 +61,7 @@ ul {
 
 .header {
   height: 80px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .header-navigate {
@@ -100,6 +101,7 @@ ul {
   color: var(--main-color);
   font-weight: 500;
   text-decoration: none;
+  padding: 20px;
 }
 
 .site-nav .link:hover,
@@ -135,7 +137,12 @@ ul {
 
 /* --------------Hero---------------- */
 
+.section-hero {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .hero {
+  /* width: 1600px; */
   text-align: center;
   background-color: var(--secondary-backround-color);
 }
@@ -143,7 +150,6 @@ ul {
   flex-wrap: wrap;
   width: 696px;
   margin: auto;
-  padding-top: 200px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -160,6 +166,7 @@ ul {
   margin-bottom: 200px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -173,6 +180,13 @@ ul {
 }
 .benefits-title {
   margin-bottom: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .benefits-text {
   width: 270px;
@@ -181,15 +195,18 @@ ul {
   color: var(--secondary-color);
 }
 /* --------------section works---------------- */
-.works .list {
-  display: flex;
-}
+
 .works-title {
   margin-bottom: 50px;
   font-size: 36px;
 }
+
 .works .list {
+  display: flex;
   gap: 30px;
+}
+.list .image {
+  display: block;
 }
 /* --------------section workers---------------- */
 .workers-title {
@@ -200,7 +217,6 @@ ul {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .workers .card {
@@ -216,17 +232,16 @@ ul {
   gap: 30px;
 }
 .workers-names {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  text-align: center;
-  font-size: 18px;
-  line-height: 2;
   color: var(--main-color);
   font-weight: 700;
-  list-style-type: none;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .workers-text {
-  margin-bottom: 30px;
   text-align: center;
   color: var(--secondary-color);
   font-size: 16px;
@@ -235,6 +250,10 @@ ul {
 }
 .team {
   background-color: var(--btn-backround-color);
+}
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /*  -----------section-buttons------------- */
 
@@ -257,6 +276,7 @@ ul {
   letter-spacing: 0.03em;
 
   padding: 6px 25px;
+  border: 0;
   border-radius: 4px;
 }
 .button:hover,
@@ -271,28 +291,32 @@ ul {
   visibility: hidden;
   font-size: 0;
 }
-.features .list {
+.list-cards .item {
+  display: block;
+}
+.list-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  /* gap: 30px; */
 }
 .list .cards {
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   border-top: 0;
   width: 370px;
 }
-
+.cards .item-text {
+  padding: 20px 24px 20px 24px;
+  text-align: start;
+}
+.item-text .title {
+  margin-bottom: 4px;
+}
 .list .title {
   font-size: 18px;
   line-height: 2;
   color: var(--main-color);
   font-weight: 700;
   list-style-type: none;
-  text-align: start;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 20px;
-  margin-bottom: 4px;
 }
 .list .text {
   color: var(--secondary-color);
