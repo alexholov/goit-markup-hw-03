@@ -53,6 +53,7 @@ ul {
 }
 
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
 }
@@ -138,8 +139,7 @@ ul {
 /* --------------Hero---------------- */
 
 .section-hero {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: var(--secondary-backround-color);
 }
 .hero {
   /* width: 1600px; */
@@ -195,7 +195,9 @@ ul {
   color: var(--secondary-color);
 }
 /* --------------section works---------------- */
-
+.section-works {
+  padding-top: 0px;
+}
 .works-title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -209,6 +211,10 @@ ul {
   display: block;
 }
 /* --------------section workers---------------- */
+.img-workers {
+  display: block;
+}
+
 .workers-title {
   font-family: 'Roboto';
   font-style: normal;
@@ -297,10 +303,10 @@ ul {
 .list-cards {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 30px; */
+  gap: 30px;
 }
-.list .cards {
-  border-bottom: 1px solid #eeeeee;
+.list-cards .cards {
+  border: 1px solid #eeeeee;
   border-top: 0;
   width: 370px;
 }
@@ -310,6 +316,11 @@ ul {
 }
 .item-text .title {
   margin-bottom: 4px;
+  font-size: 18px;
+}
+.item-text .text {
+  font-size: 16px;
+  color: var(--secondary-color);
 }
 .list .title {
   font-size: 18px;
