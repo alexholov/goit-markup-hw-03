@@ -43,6 +43,10 @@ ul {
   padding: 0;
   list-style: none;
 }
+a {
+  text-decoration: none;
+    color: inherit;
+}
 
 .container {
   width: 1200px;
@@ -102,7 +106,8 @@ ul {
   color: var(--main-color);
   font-weight: 500;
   text-decoration: none;
-  padding: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -140,9 +145,10 @@ ul {
 
 .section-hero {
   background-color: var(--secondary-backround-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero {
-  /* width: 1600px; */
   text-align: center;
   background-color: var(--secondary-backround-color);
 }
@@ -163,7 +169,6 @@ ul {
 .btn {
   background-color: var(--accent-color);
   color: #ffffff;
-  margin-bottom: 200px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
@@ -243,7 +248,7 @@ ul {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -251,7 +256,7 @@ ul {
   text-align: center;
   color: var(--secondary-color);
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.17;
   font-weight: 400;
 }
 .team {
@@ -305,18 +310,17 @@ ul {
   flex-wrap: wrap;
   gap: 30px;
 }
-.list-cards .cards {
-  border: 1px solid #eeeeee;
-  border-top: 0;
-  width: 370px;
-}
+
 .cards .item-text {
   padding: 20px 24px 20px 24px;
   text-align: start;
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 .item-text .title {
   margin-bottom: 4px;
   font-size: 18px;
+  line-height: 2;
 }
 .item-text .text {
   font-size: 16px;
